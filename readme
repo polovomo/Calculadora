@@ -1,63 +1,55 @@
-Calculadora
-Projeto simples de calculadora desenvolvida com HTML, CSS e JavaScript. O objetivo é demonstrar operações matemáticas básicas interativas, como soma, subtração, multiplicação, divisão, resto e potência, com uma interface simples.
+# Calculadora
 
-📌 Sobre o Projeto
+Projeto simples de **calculadora** desenvolvida com **HTML**, **CSS** e **JavaScript**. O objetivo é demonstrar operações matemáticas básicas interativas, como soma, subtração, multiplicação, divisão, resto e potência, com uma interface simples.
 
-Este repositório contém um exemplo de uma calculadora web com as seguintes funcionalidades:
+📌 **Sobre o Projeto**
 
-Soma: Adiciona dois números.
+Este repositório contém um exemplo de uma **calculadora web** com as seguintes funcionalidades:
 
-Subtração: Subtrai o segundo número do primeiro.
-
-Multiplicação: Multiplica os dois números.
-
-Divisão: Divide o primeiro número pelo segundo.
-
-Resto: Calcula o resto da divisão.
-
-Potência: Calcula a potência do primeiro número elevado ao segundo.
+- **Soma**: Adiciona dois números.
+- **Subtração**: Subtrai o segundo número do primeiro.
+- **Multiplicação**: Multiplica os dois números.
+- **Divisão**: Divide o primeiro número pelo segundo.
+- **Resto**: Calcula o resto da divisão.
+- **Potência**: Calcula a potência do primeiro número elevado ao segundo.
 
 O projeto foi desenvolvido para demonstrar habilidades em JavaScript e a manipulação do DOM para realizar cálculos dinâmicos com interatividade.
 
-🛠️ Tecnologias Utilizadas
+🛠️ **Tecnologias Utilizadas**
 
-HTML5
+- **HTML5**
+- **CSS3**
+- **JavaScript (ES6+)**
 
-CSS3
+**IDE recomendada**: Qualquer editor de código, como VSCode ou Sublime Text.
 
-JavaScript (ES6+)
+🚀 **Como Executar**
 
-IDE recomendada: Qualquer editor de código, como VSCode ou Sublime Text.
+1. Clone o repositório:
+   
+   ```bash
+   git clone https://github.com/seu-usuario/calculadora.git
+   ```
 
-🚀 Como Executar
+2. Abra o arquivo `index.html` em seu navegador. Não é necessário servidor para execução local.
 
-Clone o repositório:
+3. Interaja com a calculadora inserindo dois números e clicando nas operações disponíveis.
 
-bash
-Copiar
-Editar
-git clone https://github.com/seu-usuario/calculadora.git
-Abra o arquivo index.html em seu navegador. Não é necessário servidor para execução local.
+📂 **Estrutura do Repositório**
 
-Interaja com a calculadora inserindo dois números e clicando nas operações disponíveis.
-
-📂 Estrutura do Repositório
-
-bash
-Copiar
-Editar
+```
 📂 Calculadora
 ├── 📄 index.html
 ├── 📄 js/script.js
 ├── 📄 css/style.css
 └── 📄 README.md
-📖 Exemplos de Código
+```
 
-HTML (index.html):
+📖 **Exemplos de Código**
 
-html
-Copiar
-Editar
+### **HTML (index.html):**
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -84,11 +76,11 @@ Editar
     <script src="js/script.js"></script>
 </body>
 </html>
-JavaScript (js/script.js):
+```
 
-javascript
-Copiar
-Editar
+### **JavaScript (js/script.js):**
+
+```javascript
 function somar() {
     let valor1 = parseFloat(document.getElementById("valor1").value);
     let valor2 = parseFloat(document.getElementById("valor2").value);
@@ -130,11 +122,11 @@ function potenciar() {
     let resultado = Math.pow(valor1, valor2);
     document.getElementById("resultado").innerText = "Resultado: " + resultado;
 }
-CSS (css/style.css):
+```
 
-css
-Copiar
-Editar
+### **CSS (css/style.css):**
+
+```css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -189,9 +181,8 @@ button:hover {
     font-size: 18px;
     font-weight: bold;
 }
+```
 
-
-🎯 Objetivo do Repositório
+🎯 **Objetivo do Repositório**
 
 Este repositório tem como objetivo demonstrar uma implementação simples de uma calculadora web utilizando HTML, CSS e JavaScript, focando na interação com o DOM e cálculos matemáticos básicos de forma dinâmica.
-
