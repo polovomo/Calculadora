@@ -1,0 +1,197 @@
+Calculadora
+Projeto simples de calculadora desenvolvida com HTML, CSS e JavaScript. O objetivo é demonstrar operações matemáticas básicas interativas, como soma, subtração, multiplicação, divisão, resto e potência, com uma interface simples.
+
+📌 Sobre o Projeto
+
+Este repositório contém um exemplo de uma calculadora web com as seguintes funcionalidades:
+
+Soma: Adiciona dois números.
+
+Subtração: Subtrai o segundo número do primeiro.
+
+Multiplicação: Multiplica os dois números.
+
+Divisão: Divide o primeiro número pelo segundo.
+
+Resto: Calcula o resto da divisão.
+
+Potência: Calcula a potência do primeiro número elevado ao segundo.
+
+O projeto foi desenvolvido para demonstrar habilidades em JavaScript e a manipulação do DOM para realizar cálculos dinâmicos com interatividade.
+
+🛠️ Tecnologias Utilizadas
+
+HTML5
+
+CSS3
+
+JavaScript (ES6+)
+
+IDE recomendada: Qualquer editor de código, como VSCode ou Sublime Text.
+
+🚀 Como Executar
+
+Clone o repositório:
+
+bash
+Copiar
+Editar
+git clone https://github.com/seu-usuario/calculadora.git
+Abra o arquivo index.html em seu navegador. Não é necessário servidor para execução local.
+
+Interaja com a calculadora inserindo dois números e clicando nas operações disponíveis.
+
+📂 Estrutura do Repositório
+
+bash
+Copiar
+Editar
+📂 Calculadora
+├── 📄 index.html
+├── 📄 js/script.js
+├── 📄 css/style.css
+└── 📄 README.md
+📖 Exemplos de Código
+
+HTML (index.html):
+
+html
+Copiar
+Editar
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="caixa">
+        <input type="number" id="valor1" placeholder="Digite o primeiro número">
+        <input type="number" id="valor2" placeholder="Digite o segundo número">
+        <br>
+        <button onclick="somar()">Somar</button>
+        <button onclick="subtrair()">Subtrair</button>
+        <button onclick="multiplicar()">Multiplicação</button>
+        <button onclick="dividir()">Dividir</button>
+        <button onclick="restar()">Resto</button>
+        <button onclick="potenciar()">Potencia</button>
+
+        <p id="resultado">Resultado:</p>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
+JavaScript (js/script.js):
+
+javascript
+Copiar
+Editar
+function somar() {
+    let valor1 = parseFloat(document.getElementById("valor1").value);
+    let valor2 = parseFloat(document.getElementById("valor2").value);
+    let resultado = valor1 + valor2;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
+}
+
+function subtrair() {
+    let valor1 = parseFloat(document.getElementById("valor1").value);
+    let valor2 = parseFloat(document.getElementById("valor2").value);
+    let resultado = valor1 - valor2;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
+}
+
+function multiplicar() {
+    let valor1 = parseFloat(document.getElementById("valor1").value);
+    let valor2 = parseFloat(document.getElementById("valor2").value);
+    let resultado = valor1 * valor2;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
+}
+
+function dividir() {
+    let valor1 = parseFloat(document.getElementById("valor1").value);
+    let valor2 = parseFloat(document.getElementById("valor2").value);
+    let resultado = valor1 / valor2;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
+}
+
+function restar() {
+    let valor1 = parseFloat(document.getElementById("valor1").value);
+    let valor2 = parseFloat(document.getElementById("valor2").value);
+    let resultado = valor1 % valor2;
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
+}
+
+function potenciar() {
+    let valor1 = parseFloat(document.getElementById("valor1").value);
+    let valor2 = parseFloat(document.getElementById("valor2").value);
+    let resultado = Math.pow(valor1, valor2);
+    document.getElementById("resultado").innerText = "Resultado: " + resultado;
+}
+CSS (css/style.css):
+
+css
+Copiar
+Editar
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.caixa {
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="number"] {
+    padding: 10px;
+    margin: 5px;
+    width: 180px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+
+🎯 Objetivo do Repositório
+
+Este repositório tem como objetivo demonstrar uma implementação simples de uma calculadora web utilizando HTML, CSS e JavaScript, focando na interação com o DOM e cálculos matemáticos básicos de forma dinâmica.
+
