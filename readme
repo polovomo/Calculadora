@@ -1,4 +1,4 @@
-# Calculadora
+## Calculadora
 
 Projeto simples de **calculadora** desenvolvida com **HTML**, **CSS** e **JavaScript**. O objetivo é demonstrar operações matemáticas básicas interativas, como soma, subtração, multiplicação, divisão, resto e potência, com uma interface simples.
 
@@ -186,3 +186,4 @@ button:hover {
 🎯 **Objetivo do Repositório**
 
 Este repositório tem como objetivo demonstrar uma implementação simples de uma calculadora web utilizando HTML, CSS e JavaScript, focando na interação com o DOM e cálculos matemáticos básicos de forma dinâmica.
+
